@@ -201,12 +201,20 @@ body {
 }
 
 .gif_container img {
-  width: min(260px, 70vw);
+  width: min(280px, 78vw);
   height: auto;
   border-radius: 18px;
   box-shadow: 0 16px 30px rgba(255, 120, 170, 0.25);
   border: 2px solid rgba(255, 140, 190, 0.35);
   animation: floatGif 3.2s ease-in-out infinite;
+}
+
+#questionGif {
+  width: min(300px, 82vw);
+}
+
+#yesGif {
+  width: min(320px, 82vw);
 }
 
 .gif_container.wiggle {
@@ -712,6 +720,14 @@ body {
   }
 
   .gif_container img {
-    width: min(220px, 70vw);
+    width: min(240px, 76vw);
+  }
+
+  #questionGif {
+    width: min(260px, 80vw);
+  }
+
+  #yesGif {
+    width: min(280px, 80vw);
   }
 }
