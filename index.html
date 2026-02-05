@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Be My Valentine</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="hearts" aria-hidden="true"></div>
+    <div class="glow blob blob-a" aria-hidden="true"></div>
+    <div class="glow blob blob-b" aria-hidden="true"></div>
+
+    <main class="card">
+      <section id="question-screen" class="screen">
+        <div class="hero">
+          <div class="pulse-heart" aria-hidden="true"></div>
+          <h1>Will you be my Valentine?</h1>
+          <p class="sub">A tiny question with a big heart.</p>
+        </div>
+        <div class="chase-scene" aria-hidden="true">
+          <div class="chibi-wrap boy chase">
+            <svg class="chibi-svg" viewBox="0 0 120 150" aria-hidden="true">
+              <g class="shadow">
+                <ellipse cx="60" cy="142" rx="26" ry="6" />
+              </g>
+              <g class="chibi-body">
+                <circle class="head" cx="60" cy="38" r="26" />
+                <path
+                  class="hair"
+                  d="M34 35c4-18 19-28 36-28 16 0 30 9 33 26-7-6-16-9-26-9-8 0-16 2-23 6-6 3-11 4-20 5z"
+                />
+                <circle class="eye eye-left" cx="50" cy="38" r="3" />
+                <circle class="eye eye-right" cx="70" cy="38" r="3" />
+                <circle class="cheek cheek-left" cx="44" cy="46" r="4" />
+                <circle class="cheek cheek-right" cx="76" cy="46" r="4" />
+                <path class="mouth" d="M54 50c4 4 8 4 12 0" />
+                <rect class="body" x="36" y="66" width="48" height="50" rx="18" />
+                <rect class="arm arm-left" x="18" y="72" width="16" height="44" rx="8" />
+                <rect class="arm arm-right" x="86" y="72" width="16" height="44" rx="8" />
+                <rect class="leg leg-left" x="42" y="112" width="14" height="30" rx="8" />
+                <rect class="leg leg-right" x="64" y="112" width="14" height="30" rx="8" />
+              </g>
+            </svg>
+          </div>
+          <div class="chibi-wrap girl chase">
+            <svg class="chibi-svg" viewBox="0 0 120 150" aria-hidden="true">
+              <g class="shadow">
+                <ellipse cx="60" cy="142" rx="26" ry="6" />
+              </g>
+              <g class="chibi-body">
+                <circle class="head" cx="60" cy="38" r="26" />
+                <path
+                  class="hair"
+                  d="M28 40c2-20 18-32 38-32 20 0 35 12 38 32-8-5-18-8-28-8-6 0-12 1-18 3-8 3-16 4-30 5z"
+                />
+                <path
+                  class="hair-tail"
+                  d="M30 56c-6 12-6 24-2 34 10-6 12-16 10-28z"
+                />
+                <circle class="eye eye-left" cx="50" cy="38" r="3" />
+                <circle class="eye eye-right" cx="70" cy="38" r="3" />
+                <circle class="cheek cheek-left" cx="44" cy="46" r="4" />
+                <circle class="cheek cheek-right" cx="76" cy="46" r="4" />
+                <path class="mouth" d="M54 50c4 4 8 4 12 0" />
+                <rect class="body" x="34" y="66" width="52" height="52" rx="20" />
+                <rect class="arm arm-left" x="16" y="76" width="16" height="42" rx="8" />
+                <rect class="arm arm-right" x="88" y="76" width="16" height="42" rx="8" />
+                <rect class="leg leg-left" x="42" y="114" width="14" height="28" rx="8" />
+                <rect class="leg leg-right" x="66" y="114" width="14" height="28" rx="8" />
+              </g>
+            </svg>
+          </div>
+          <div class="trail-heart"></div>
+        </div>
+        <div class="gif_container">
+          <img
+            id="questionGif"
+            src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbW5lenZyZHI5OXM2eW95b3pmMG40cWVrMDhtNjVuM3A4dGNxa2g2dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/VM1fcpu2bKs1e2Kdbj/giphy.gif"
+            alt="Cute valentine gif"
+          />
+        </div>
+        <div class="buttons">
+          <button id="yesBtn" class="btn yes">Yes</button>
+          <button id="noBtn" class="btn no">No</button>
+        </div>
+        <p class="hint">Pssst... only one choice works.</p>
+      </section>
+
+      <section id="thankyou-screen" class="screen hidden">
+        <div class="hero">
+          <div class="ring" aria-hidden="true">
+            <div class="mini-heart"></div>
+          </div>
+          <h1>Thank you, bae!</h1>
+          <p class="sub">You just made my whole year sparkle.</p>
+        </div>
+        <div class="hug-scene" aria-hidden="true">
+          <div class="chibi-wrap boy hugger">
+            <svg class="chibi-svg" viewBox="0 0 120 150" aria-hidden="true">
+              <g class="shadow">
+                <ellipse cx="60" cy="142" rx="26" ry="6" />
+              </g>
+              <g class="chibi-body">
+                <circle class="head" cx="60" cy="38" r="26" />
+                <path
+                  class="hair"
+                  d="M34 35c4-18 19-28 36-28 16 0 30 9 33 26-7-6-16-9-26-9-8 0-16 2-23 6-6 3-11 4-20 5z"
+                />
+                <circle class="eye eye-left" cx="50" cy="38" r="3" />
+                <circle class="eye eye-right" cx="70" cy="38" r="3" />
+                <circle class="cheek cheek-left" cx="44" cy="46" r="4" />
+                <circle class="cheek cheek-right" cx="76" cy="46" r="4" />
+                <path class="mouth" d="M54 50c4 4 8 4 12 0" />
+                <rect class="body" x="36" y="66" width="48" height="50" rx="18" />
+                <rect class="arm arm-left" x="18" y="72" width="16" height="44" rx="8" />
+                <rect class="arm arm-right" x="86" y="72" width="16" height="44" rx="8" />
+                <rect class="leg leg-left" x="42" y="112" width="14" height="30" rx="8" />
+                <rect class="leg leg-right" x="64" y="112" width="14" height="30" rx="8" />
+              </g>
+            </svg>
+          </div>
+          <div class="chibi-wrap girl hugged">
+            <svg class="chibi-svg" viewBox="0 0 120 150" aria-hidden="true">
+              <g class="shadow">
+                <ellipse cx="60" cy="142" rx="26" ry="6" />
+              </g>
+              <g class="chibi-body">
+                <circle class="head" cx="60" cy="38" r="26" />
+                <path
+                  class="hair"
+                  d="M28 40c2-20 18-32 38-32 20 0 35 12 38 32-8-5-18-8-28-8-6 0-12 1-18 3-8 3-16 4-30 5z"
+                />
+                <path
+                  class="hair-tail"
+                  d="M30 56c-6 12-6 24-2 34 10-6 12-16 10-28z"
+                />
+                <circle class="eye eye-left" cx="50" cy="38" r="3" />
+                <circle class="eye eye-right" cx="70" cy="38" r="3" />
+                <circle class="cheek cheek-left" cx="44" cy="46" r="4" />
+                <circle class="cheek cheek-right" cx="76" cy="46" r="4" />
+                <path class="mouth" d="M54 50c4 4 8 4 12 0" />
+                <rect class="body" x="34" y="66" width="52" height="52" rx="20" />
+                <rect class="arm arm-left" x="16" y="76" width="16" height="42" rx="8" />
+                <rect class="arm arm-right" x="88" y="76" width="16" height="42" rx="8" />
+                <rect class="leg leg-left" x="42" y="114" width="14" height="28" rx="8" />
+                <rect class="leg leg-right" x="66" y="114" width="14" height="28" rx="8" />
+              </g>
+            </svg>
+          </div>
+          <div class="hug-burst"></div>
+        </div>
+        <div class="gif_container">
+          <img
+            id="yesGif"
+            src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmo3c3l5ODh3ZGN6NHhhaDE2Mjg1ZjkwOXczdDFxbWM3dTBtaW9zaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/9XY4f3FgFTT4QlaYqa/giphy.gif"
+            alt="Thank you gif"
+          />
+        </div>
+        <div class="love-note">
+          <p>Promise: extra hugs, extra kisses, and endless cuddles.</p>
+          <p>Now come here so I can celebrate properly.</p>
+        </div>
+        <button id="resetBtn" class="btn ghost">Replay</button>
+      </section>
+    </main>
+
+    <!-- Inspired by ivysone/Will-you-be-my-Valentine- -->
+    <script src="script.js"></script>
+  </body>
+</html>
